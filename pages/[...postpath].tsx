@@ -19,7 +19,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			redirect: {
 				permanent: false,
 				destination: `${
-					`https://topfood.site/graphql` + encodeURI(path as string)
+					`https://topfood.site/graphql/` + encodeURI(path as string)
 				}`,
 			},
 		};
